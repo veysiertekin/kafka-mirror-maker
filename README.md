@@ -20,7 +20,6 @@ docker build -t mirror-maker:latest .
 |    DESTINATION      | bootstrap.servers for the Destination Kafka Cluster |localhost:9092|
 |      SOURCE         | bootstrap.servers for the Source Kafka Cluster |localhost:9092|
 |     WHITELIST       | Topics to mirror     | * |
-|     NUM_STREAMS     | Num of streams, this value must be the number of the partitions for single mirror maker instance. Consider that if you have 12 partitions for the topic and you want to run 3 instance of the mirror maker this value must be 4 (`12/3 = 4`).    | 12 |
 |     GROUPID         | Consumer group id for Kafka consumer | `_mirror_maker` |
 
 #### Usage

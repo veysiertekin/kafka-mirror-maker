@@ -24,7 +24,7 @@ ENV WHITELIST *
 ENV DESTINATION "localhost:6667"
 ENV SOURCE "localhost:6667"
 ENV GROUPID "_mirror_maker"
-ENV NUM_STREAMS "12"
+ENV NUM_STREAMS "1"
 ENV JMX_PORT "9999"
 ENV KAFKA_HEAP_OPTS "-XX:MaxRAMPercentage=70 -XshowSettings:vm -XX:+ExitOnOutOfMemoryError"
 
