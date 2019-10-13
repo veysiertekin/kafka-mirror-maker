@@ -56,35 +56,6 @@ spec:
           value: "localhost:9092"
 ```
 
-Or:
-
-```
-apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  name: mirror-maker
-spec:
-  replicas: 2
-  template:
-    metadata:
-      labels:
-        name: mirror-maker
-    spec:
-      containers:
-      - name: mirror-maker
-        image: veysiertekin/kafka-mirror-maker
-        imagePullPolicy: Always
-        env:
-        - name: "NUM_STREAMS"
-          value: "6"
-        - name: "WHITELIST"
-          value: "*"
-        - name: "DESTINATION"
-          value: "localhost:9092"
-        - name: "SOURCE"
-          value: "localhost:9092"
-```
-
 
 ### License
 
